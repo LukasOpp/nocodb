@@ -201,6 +201,7 @@ const cellType = computed(() => {
   if (isRating(column.value)) return 'rating'
   if (isDuration(column.value)) return 'duration'
   if (isEmail(column.value)) return 'email'
+  if (isColor(column.value)) return 'color'
   if (isURL(column.value)) return 'url'
   if (isPhoneNumber(column.value)) return 'phoneNumber'
   if (isPercent(column.value)) return 'percent'
@@ -421,6 +422,11 @@ const cellClassName = computed(() => {
       <template v-else-if="cellType === 'email'">
         <CellEmailReadonly v-if="showReadonlyField" :model-value="vModel" />
         <CellEmailEditor v-else v-model="vModel" />
+      </template>
+
+      <template v-else-if="cellType === 'color'">
+        <CellColorReadonly v-if="showReadonlyField" :model-value="vModel" />
+        <CellColorEditor v-else v-model="vModel" />
       </template>
 
       <template v-else-if="cellType === 'url'">

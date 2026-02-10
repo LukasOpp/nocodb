@@ -1087,6 +1087,9 @@ export class MysqlUi implements SqlUi {
           msg: ['Validation failed : isMobilePhone ({cn})'],
         };
         break;
+      case 'Color':
+        colProp.dt = 'varchar';
+        break;
       case 'Email':
         colProp.dt = 'varchar';
         colProp.validate = {
@@ -1238,6 +1241,7 @@ export class MysqlUi implements SqlUi {
 
       case 'PhoneNumber':
       case 'Email':
+      case 'Color':
         return ['varchar'];
 
       case 'URL':

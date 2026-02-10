@@ -159,6 +159,7 @@ import NcMegaPhone from '~icons/nc-icons/megaphone'
 
 import NcCellBarcode from '~icons/nc-icons/cell-barcode'
 import NcCellCheckbox from '~icons/nc-icons/cell-checkbox'
+import NcCellColor from '~icons/nc-icons/cell-color'
 import NcCellDate from '~icons/nc-icons/cell-date'
 import NcCellYear from '~icons/nc-icons/cell-year'
 import NcCellEmail from '~icons/nc-icons/cell-email'
@@ -978,6 +979,7 @@ export const iconMap = {
   'home1': NcHome1,
   'cellBarcode': h(NcCellBarcode, { stroke: 'transparent' }),
   'cellCheckbox': NcCellCheckbox,
+  'cellColor': NcCellColor,
   'cellDate': NcCellDate,
   'cellYear': NcCellYear,
   'cellEmail': NcCellEmail,

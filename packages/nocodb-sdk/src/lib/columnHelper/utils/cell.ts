@@ -72,6 +72,8 @@ export const isCurrency = (column: ColumnType) =>
 export const isPhoneNumber = (column: ColumnType) =>
   column.uidt === UITypes.PhoneNumber;
 
+export const isColor = (column: ColumnType) => column.uidt === UITypes.Color;
+
 export const isDecimal = (column: ColumnType) =>
   column.uidt === UITypes.Decimal;
 
@@ -116,6 +118,7 @@ export const isAutoSaved = (column: ColumnType) =>
     UITypes.PhoneNumber,
     UITypes.Email,
     UITypes.URL,
+    UITypes.Color,
     UITypes.Number,
     UITypes.Decimal,
     UITypes.Percent,

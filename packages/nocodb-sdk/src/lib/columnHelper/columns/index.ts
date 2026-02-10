@@ -11,6 +11,7 @@ export * from './Decimal';
 export * from './PhoneNumber';
 export * from './Email';
 export * from './Url';
+export * from './Color';
 export * from './Json';
 export * from './GeoData';
 export * from './Barcode';

@@ -887,6 +887,9 @@ export class OracleUi implements SqlUi {
           msg: ['Validation failed : isMobilePhone'],
         };
         break;
+      case 'Color':
+        colProp.dt = 'varchar';
+        break;
       case 'Email':
         colProp.dt = 'varchar';
         colProp.validate = {

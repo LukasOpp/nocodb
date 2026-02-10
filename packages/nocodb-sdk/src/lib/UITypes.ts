@@ -47,6 +47,7 @@ enum UITypes {
   Barcode = 'Barcode',
   QrCode = 'QrCode',
   Button = 'Button',
+  Color = 'Color',
   Links = 'Links',
   User = 'User',
   CreatedBy = 'CreatedBy',
@@ -95,6 +96,7 @@ export const UITypesName = {
   [UITypes.Barcode]: 'Barcode',
   [UITypes.QrCode]: 'Qr code',
   [UITypes.Button]: 'Button',
+  [UITypes.Color]: 'Color',
   [UITypes.Links]: 'Links',
   [UITypes.User]: 'User',
   [UITypes.CreatedBy]: 'Created by',
@@ -223,6 +225,7 @@ export const UITypesSearchTerms = {
   [UITypes.Barcode]: ['Barcode', 'product code', 'scan code'],
   [UITypes.QrCode]: ['Qr code', 'QR code', 'scan code'],
   [UITypes.Button]: ['Button', 'action button', 'click button'],
+  [UITypes.Color]: ['Color', 'color', 'hex', 'rgb', 'hsl', 'colour', 'palette'],
   [UITypes.Links]: ['Links', 'related links', 'connections'],
   [UITypes.User]: ['User', 'person', 'team member', 'assignee', 'owner'],
   [UITypes.CreatedBy]: ['Created by', 'author', 'who created'],
@@ -304,6 +307,7 @@ export const FieldNameFromUITypes: Record<UITypes, string> = {
   [UITypes.Barcode]: 'Barcode',
   [UITypes.QrCode]: 'Qr code',
   [UITypes.Button]: 'Button',
+  [UITypes.Color]: 'Color',
   [UITypes.Links]: '{TableName}',
   [UITypes.User]: 'User',
   [UITypes.CreatedBy]: 'Created by',
@@ -535,6 +539,7 @@ export const partialUpdateAllowedTypes = [
   UITypes.PhoneNumber,
   UITypes.Email,
   UITypes.URL,
+  UITypes.Color,
 ];
 
 export const getUITypesForFormulaDataType = (

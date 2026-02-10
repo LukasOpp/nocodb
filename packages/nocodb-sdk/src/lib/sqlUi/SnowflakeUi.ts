@@ -794,6 +794,9 @@ export class SnowflakeUi implements SqlUi {
           msg: ['Validation failed : isMobilePhone'],
         };
         break;
+      case 'Color':
+        colProp.dt = 'VARCHAR';
+        break;
       case 'Email':
         colProp.dt = 'VARCHAR';
         colProp.validate = {
@@ -915,6 +918,7 @@ export class SnowflakeUi implements SqlUi {
 
       case 'PhoneNumber':
       case 'Email':
+      case 'Color':
         return ['VARCHAR'];
 
       case 'URL':
