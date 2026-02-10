@@ -643,6 +643,9 @@ export class SqliteUi implements SqlUi {
           msg: ['Validation failed : isMobilePhone'],
         };
         break;
+      case 'Color':
+        colProp.dt = 'varchar';
+        break;
       case 'Email':
         colProp.dt = 'varchar';
         colProp.validate = {
@@ -799,6 +802,7 @@ export class SqliteUi implements SqlUi {
 
       case 'PhoneNumber':
       case 'Email':
+      case 'Color':
         return ['varchar', 'text'];
 
       case 'URL':

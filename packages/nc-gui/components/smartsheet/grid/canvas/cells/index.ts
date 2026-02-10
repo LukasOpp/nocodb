@@ -21,6 +21,7 @@ import { PercentCellRenderer } from './Percent'
 import { UrlCellRenderer } from './Url'
 import { GeoDataCellRenderer } from './GeoData'
 import { PhoneNumberCellRenderer } from './PhoneNumber'
+import { ColorCellRenderer } from './Color'
 import { DurationCellRenderer } from './Duration'
 import { JsonCellRenderer } from './Json'
 import { BarcodeCellRenderer } from './Barcode'
@@ -116,6 +117,7 @@ export function useGridCellHandler(params: {
   cellTypesRegistry.set(UITypes.URL, UrlCellRenderer)
   cellTypesRegistry.set(UITypes.GeoData, GeoDataCellRenderer)
   cellTypesRegistry.set(UITypes.PhoneNumber, PhoneNumberCellRenderer)
+  cellTypesRegistry.set(UITypes.Color, ColorCellRenderer)
   cellTypesRegistry.set(UITypes.Duration, DurationCellRenderer)
   cellTypesRegistry.set(UITypes.CreatedTime, DateTimeCellRenderer)
   cellTypesRegistry.set(UITypes.LastModifiedTime, DateTimeCellRenderer)

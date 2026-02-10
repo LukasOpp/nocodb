@@ -1702,6 +1702,9 @@ export class PgUi implements SqlUi {
           msg: ['Validation failed : isMobilePhone'],
         };
         break;
+      case 'Color':
+        colProp.dt = 'character varying';
+        break;
       case 'Email':
         colProp.dt = 'character varying';
         colProp.validate = {
@@ -1869,6 +1872,7 @@ export class PgUi implements SqlUi {
 
       case 'PhoneNumber':
       case 'Email':
+      case 'Color':
         return ['character varying'];
 
       case 'URL':

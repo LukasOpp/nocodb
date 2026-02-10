@@ -614,6 +614,9 @@ export class DatabricksUi implements SqlUi {
           msg: ['Validation failed : isMobilePhone'],
         };
         break;
+      case 'Color':
+        colProp.dt = 'string';
+        break;
       case 'Email':
         colProp.dt = 'string';
         colProp.validate = {
@@ -742,6 +745,7 @@ export class DatabricksUi implements SqlUi {
 
       case 'PhoneNumber':
       case 'Email':
+      case 'Color':
         return ['string'];
 
       case 'URL':

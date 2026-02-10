@@ -111,6 +111,10 @@ const uiTypes: UiTypesType[] = [
     icon: iconMap.cellPhone,
   },
   {
+    name: UITypes.Color,
+    icon: iconMap.cellColor,
+  },
+  {
     name: UITypes.Email,
     icon: iconMap.cellEmail,
   },
@@ -260,6 +264,7 @@ const isTypableInputColumn = (colOrUidt: ColumnType | UITypes) => {
     UITypes.SingleLineText,
     UITypes.Number,
     UITypes.PhoneNumber,
+    UITypes.Color,
     UITypes.Email,
     UITypes.Decimal,
     UITypes.Currency,

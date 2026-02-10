@@ -1331,6 +1331,7 @@ const unique = computed({
           @navigate-to-integrations="handleNavigateToIntegrations"
         />
         <SmartsheetColumnDurationOptions v-if="formState.uidt === UITypes.Duration" v-model:value="formState" />
+        <SmartsheetColumnColorOptions v-if="formState.uidt === UITypes.Color" v-model:value="formState" />
         <SmartsheetColumnRatingOptions v-if="formState.uidt === UITypes.Rating" v-model:value="formState" />
         <SmartsheetColumnCheckboxOptions v-if="formState.uidt === UITypes.Checkbox" v-model:value="formState" />
         <SmartsheetColumnLookupOptions v-if="formState.uidt === UITypes.Lookup" v-model:value="formState" />
